@@ -11,7 +11,7 @@ Desta forma, utilizaremos as metodologias aplicáveis para uma visualização ef
 - "DebtToIncomeRatio do mutuário x Juros aplicados": Analisa a relação entre as condições de crédito do mutuário e as taxas de juros aplicadas aos empréstimos
 - "Retorno por Volume de Transação": Analisa o retorno da financeira nas transações realizadas
 
-O objtivo neste projeto é, portanto, o de reunir o máximo possível das informações acima relacionadas em um único gráfico dinâmico e interativo.
+Nosso objetivo neste projeto é, portanto, procurar reunir o máximo das informações apresentadas nestes 3 gráficos em um único gráfico dinâmico e interativo.
 
 # 3. Design
 # 4. Feedback
