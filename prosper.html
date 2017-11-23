@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prosper Loan Data</title>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
+</head>
+
+<body>
+	<div id="chartContainer">
+		<script type="text/javascript">
+			var svg = dimple.newSvg("#chartContainer",800,600);//creating a SVG with given size
+			d3.csv("ProsperLoanDataResume.csv",function(data)// function called when athlets.csv is done loading
+			{
+				var chart = new dimple.chart(svg,data); // getting a Chart instance to draw on
+				var tipchart = null;
+				
+				// EIXO X:
+				var x = chart.addCategoryAxis("x", "FDebtToIncomeRatio");
+				x.title = "Taxa de Comprometimento da Renda (DebtToIncomeRatio)";
+
+				// EIXO Y:
+				var y = chart.addCategoryAxis("y", "FBorrowerAPR");
+				y.title = "Taxa de Juros Anual (BorrowerAPR)";
+				
+				// EIXO Z:
+				var z = chart.addMeasureAxis("z", "LoanOriginalAmount");
+				z.overrideMin = 0;
+				z.overrideMax = 40000000;
+				
+				var cor=d3.rgb("#E0E0E0");
+				// 5.0 shades of grey
+				chart.defaultColors = [
+					new dimple.color(cor.toString()),
+					new dimple.color(cor.darker(1.0).toString()),
+					new dimple.color(cor.darker(2.0).toString()),
+					new dimple.color(cor.darker(3.0).toString()),
+					new dimple.color(cor.darker(4.0).toString()),
+					new dimple.color(cor.darker(5.0).toString())
+				]; 
+				
+				// FDebtToIncomeRatio:
+				var s_bubble = chart.addSeries("FDebtToIncomeRatio", dimple.plot.bubble);
+				s_bubble.radius = 40;
+				s_bubble.addOrderRule("FDebtToIncomeRatio")
+			
+				// Handle the hover event - overriding the default behaviour
+				s_bubble.addEventHandler("mouseover", onHover);
+				
+				// Handle the leave event - overriding the default behaviour
+				s_bubble.addEventHandler("mouseleave", onLeave);
+				
+				// EXIBE O GRÁFICO PRINCIPAL
+				chart.draw();
+				
+				// Add a title with some d3
+				svg.append("text")
+				   .attr("x", chart._xPixels() + chart._widthPixels() / 2)
+				   .attr("y", chart._yPixels() - 20)
+				   .style("text-anchor", "middle")
+				   .style("font-family", "courier new")
+				   .style("font-weight", "bold")
+				   .style("font-size", 16)
+				   .text("Prosper Loans: Taxa de Juros x Comprometimento da Renda")
+				
+				// ----------------
+				// GRÁFICO AUXILIAR
+				// ----------------
+				// Event to handle mouse enter
+				function onHover(e) {
+        
+					// Get the properties of the selected shape
+					var cx = parseFloat(e.selectedShape.attr("cx")),
+						cy = parseFloat(e.selectedShape.attr("cy")),
+						r = parseFloat(e.selectedShape.attr("r")),
+						fill = e.selectedShape.attr("fill"),
+						stroke = e.selectedShape.attr("stroke");
+						
+					// Set the size and position of the popup
+					var width = 240,
+						height = 120,
+						x = (cx + r + width + 10 < svg.attr("width") ?
+							  cx + r + 10 :
+							  cx - r - width - 20);
+						y = (cy - height / 2 < 0 ?
+							  15 :
+							  cy - height / 2);
+							
+					// Fade the popup fill mixing the shape fill with 90% white
+					var popupFillColor = d3.rgb(
+								d3.rgb(fill).r + 0.9 * (255 - d3.rgb(fill).r),
+								d3.rgb(fill).g + 0.9 * (255 - d3.rgb(fill).g),
+								d3.rgb(fill).b + 0.9 * (255 - d3.rgb(fill).b)
+							);
+					
+					// Create a group for the popup objects
+					popup = svg.append("g");
+					
+					// Add a rectangle surrounding the chart
+					popup
+					  .append("rect")
+					  .attr("x", x + 5)
+					  .attr("y", y - 5)
+					  .attr("width", width)
+					  .attr("height", height)
+					  .attr("rx", 5)
+					  .attr("ry", 5)
+					  .style("fill", popupFillColor)
+					  .style("stroke", stroke)
+					  .style("stroke-width", 2);
+					
+					var value = e.zValue;
+					var loanamount = '$ ' + value.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+					
+					// Add the series value text
+					popup
+					  .append("text")
+					  .attr("x", x + 10)
+					  .attr("y", y + 10)
+					  .text("Valor Total: " + loanamount + " - Tx.Juros: " + e.yValue + "%")
+					  .style("font-family", "sans-serif")
+					  .style("font-size", 10)
+					  .style("fill", "fill");
+					
+					// Filter the data for the selected brand and sku
+					var hoverData = data
+					//hoverData = dimple.filterData(hoverData, "FLoanOriginationYear", Number(e.xValue.getFullYear().toString()));
+					hoverData = dimple.filterData(hoverData, "FBorrowerAPR", e.yValue);
+					hoverData = dimple.filterData(hoverData, "FDebtToIncomeRatio", e.xValue);
+					
+					// Create a new mini chart of Unit Sales over Months
+					tipchart = new dimple.chart(svg,  hoverData);
+					//tipchart.setBounds(x + 10, y + 30, width - 10, height - 40);
+					tipchart.setBounds(x + 20, y + 30, width - 30, height - 60);
+
+					var x_tip = tipchart.addTimeAxis("x", "FLoanOriginationYear", "%Y", "%Y")//.hidden = true;
+					x_tip.title = "";
+					x_tip.showGridlines = true;
+					
+					var y_tip = tipchart.addMeasureAxis("y", "LoanOriginalAmount").hidden = true;
+					y_tip.title = "";
+			
+					var popUpSeries = tipchart.addSeries("SelectedSeries", dimple.plot.line);
+
+					// Set the gap to 80% - just a style preference
+					popUpSeries.barGap = 0.8;
+					
+					// Set the color to the stroke color of the selected node
+					tipchart.assignColor("SelectedSeries", stroke, stroke);
+					
+					// Draw the mini chart
+					tipchart.draw();
+				
+			  };
+			  
+			  // Event to handle mouse exit
+				function onLeave(e) {
+					// Remove the chart
+					if (tipchart !== null) {
+					  tipchart._group.remove();
+					}
+					// Remove the popup
+					if (popup !== null) {
+					  popup.remove();
+					}
+				 };
+				
+				
+			});
+		
+		</script>
+	</div>
+	
+</body>
+</html>
