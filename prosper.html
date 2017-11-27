@@ -46,7 +46,7 @@
 
 					
 					var ybS = yearBars.addSeries(null, dimple.plot.bar);
-					var ybl = yearBars.addSeries(null, dimple.plot.line);
+					//var ybl = yearBars.addSeries(null, dimple.plot.line);
 					//ybS.addEventHandler("click", on_yBar_Click);
 					yearBars.draw();
 					
@@ -100,7 +100,7 @@
 				// Add a title with some d3
 				svg.append("text")
 				   .attr("x", chart._xPixels() + chart._widthPixels() / 2)
-				   .attr("y", 20)
+				   .attr("y", 15)
 				   //.attr("y", chart._yPixels() - 40)
 				   .style("text-anchor", "middle")
 				   .style("font-family", "courier new")
@@ -110,8 +110,7 @@
 
 				svg.append("text")
 				   .attr("x", chart._xPixels() + chart._widthPixels() / 2)
-				   .attr("y", chart._yPixels() - 20)
-				   .attr("y", chart._yPixels() - 20)
+				   .attr("y", chart._yPixels() - 5)
 				   .style("text-anchor", "middle")
 				   .style("font-family", "courier new")
 				   .style("font-weight", "bold")
@@ -123,8 +122,9 @@
 				svg.selectAll("explanatory_text")
 					.data(["Prosper é a primeira plataforma do mercado de empréstimos da América, que permite que as pessoas invistam umas nas outras, de uma forma que seja financeiramente",
 					"e socialmente gratificante. Uma questão importante para analisarmos, portanto, é se de alguma forma os empréstimos seriam socialmente distribuídos. Dentro deste contexto,",
-					"será que mutuários com uma alta taxa de comprometimento da renda teriam acesso preferencialmente às menores taxas de juros? Ou se existe uma relação, qual seria?",
-					"A conclusão à que chegamos é que, neste aspecto, as taxas de juros concedidas nos empréstimos não tem relação com o grau de endividamento do mutuário."
+					"será que mutuários com uma alta taxa de comprometimento da renda teriam acesso preferencialmente às menores taxas de juros? Se existe uma relação, qual seria?",
+					"O que podemos perceber neste aspecto, é que a taxa de comprometimento da renda dos mutuários não deram à estes qualquer vantagem ou desvantagem na determinação",
+					"da taxa de juros dos empréstimos intermediados."
 					])
 					.enter()
 					.append("text")
@@ -257,9 +257,9 @@
 					tpyBar_x.ticks = 3;
 					tpyBar_x.showGridlines = false;
 					tpyBar_x.overrideMin = 0;
-					tpyBar_x.overrideMax = 50000000;
+					tpyBar_x.overrideMax = 40000000;
 					
-					var tipybS = tipyearBars.addSeries("SelectedSeries", dimple.plot.line);
+					var tipybS = tipyearBars.addSeries("SelectedSeries", dimple.plot.bar);
 					//ybS.addEventHandler("click", on_yBar_Click);
 					tipyearBars.draw();
 
