@@ -16,7 +16,15 @@ Nosso objetivo neste projeto é, portanto, procurar reunir o máximo das informa
 # 3. Design
 - Diagnóstico inicial e definição do escopo: Conforme consta na documentação do projeto utilizado conforme item anterior, o primeiro gráfico serve para contextualização do cenário; o segundo foca mais diretamente na questão à ser respondida; e o terceiro por sua vez procura analisar os resultados efetivos da operação. Foram levantados todos os atributos utilizados nos 3 gráficos e optou-se na elaboração de um novo gráfico que pudesse sintetizar de maneira eficaz as informações dos gráficos 1 e 2. O terceiro gráfico foi excluído do escopo, pois conclui-se que a aumentaria muito a complexidade do modelo para exibir de maneira eficaz todas as informações dos 3 gráficos.
 
-- 
+- Versão 1, definição de design 1 - Eixos do gráfico e Posicionamento: Verificou-se que a questão a ser respondida envolvia essencialmente a relação entre o atributo Taxa de Comprometimento da Renda (DebtToIncomeRatio) e o atributo Taxa de Juros Anual (BorrowerAPR). Concluiu-se assim que o posicionamento destes atributos no gráfico seria prioridade onde, então, atribuímos estes aos eixos X e Y respectivamente.
+
+- Versão 1, definição de design 2 - Volume de Emprestimos(LoanAmount): O volume de empréstimos é o atributo que na verdade determinará ou não a forma de relação entre os atributos acima. Por isso, apresentamos o mesmo em forma de bolha, dimensionando seu diâmetro de acordo com o volume em cada posição x,y (DebtToIncomeRatio, BorrowerAPR). O objetivo foi o de procurar dar uma ideia desta relação inicialmente somente visualmente por meio da dimensão das bolhas, sem apresentação de números, desta relação.
+
+- Versão 1, definição de design 3 - Evolução analítica: Um recurso importante que acredita-se ser essencial é poder visualizar também uma visão "analítica" de um determinado ponto do gráfico. Desta forma, ao parar com o mouse sobre uma bolha, é exibido então o valor total (que determinou o tamanho da bolha) e a evolução daquele ponto x,y ao longo do tempo.
+
+- Versão 1, definição de design 4 - Panorama geral: Um ponto importante foi o de procurar dar uma visão geral sobre o negócio em si, ou seja, empréstimos. Por isso, optou-se por mostrar um gráfico de barras lateral com a evolução do volume total de empréstimos realizados ao longo do tempo. Essa visão permanece sempre visível ao gráfico, de forma à proporcionar uma comparação imediata visual entre uma visão analítica de um determinado ponto x,y e o total geral.
+
+- Versão 1, definição de design 5 - Evolução do Público-segmentado: Juntamente com a definição de design 3, verificou-se importante também apresentar o total de volume de empréstimo por segmentação do público. Ou seja, verificou-se que para ponto x do gráfico (DebtToIncomeRatio) representa também um segmento de público que são os mutuários do empréstimos. Por isso, quando o mouse para sobre uma das bolhas, também é atualizado o gráfico de barras lateral, acrescentando o volume total de empréstimos ao longo do tempo para a taxa de comprometimento da renda selecionada (ponto x).
 
 # 4. Feedback
 Cada versão do gráfico produzida foi submetida à avaliação de pessoas de relacionadas à área de TI e relacionadas ao curso de analista de dados da Udacity por meio da plataforma slack. Abaixo apresentamos a relação dos feedbacks recebidos:
