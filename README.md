@@ -6,7 +6,7 @@ A descrição completa dos requisitos do projeto estão disponíveis no arquivo:
 # 2. Resumo
 Este projeto utilizará como ponto de partida a "SESSÃO DE GRÁFICOS FINAIS" - conforme reportado no arquivo prosperLoanData.html - e o dataset "ProsperLoanDataResume.csv", ambos resultantes das atividades de análise e exploração dos dados realizadas no projeto 4 da Udacity: "Explore e Resuma os Dados". 
 
-Desta forma, utilizaremos as metodologias aplicáveis para uma visualização eficaz, dinâmica e interativa com base nos seguintes gráficos já apresentados na "SESSÃO DE GRÁFICOS FINAIS" do projeto 4:
+Desta forma, utilizaremos as metodologias aplicáveis para uma visualização eficaz, dinâmica e interativa com base nos seguintes gráficos já apresentados na "SESSÃO DE GRÁFICOS FINAIS" do projeto 4 (disponível em https://goo.gl/6n8Kpu):
 - "Evolução do Volume de Transações": Analisa o volume de transações ao longo do tempo
 - "DebtToIncomeRatio do mutuário x Juros aplicados": Analisa a relação entre as condições de crédito do mutuário e as taxas de juros aplicadas aos empréstimos
 - "Retorno por Volume de Transação": Analisa o retorno da financeira nas transações realizadas
@@ -14,8 +14,9 @@ Desta forma, utilizaremos as metodologias aplicáveis para uma visualização ef
 Nosso objetivo neste projeto é, portanto, procurar reunir o máximo das informações apresentadas nestes 3 gráficos em um único gráfico dinâmico e interativo.
 
 # 3. Design
+- Diagnóstico inicial e definição do escopo: Conforme consta na documentação do projeto utilizado conforme item anterior, o primeiro gráfico serve para contextualização do cenário; o segundo foca mais diretamente na questão à ser respondida; e o terceiro por sua vez procura analisar os resultados efetivos da operação. Foram levantados todos os atributos utilizados nos 3 gráficos e optou-se na elaboração de um novo gráfico que pudesse sintetizar de maneira eficaz as informações dos gráficos 1 e 2. O terceiro gráfico foi excluído do escopo, pois conclui-se que a aumentaria muito a complexidade do modelo para exibir de maneira eficaz todas as informações dos 3 gráficos.
 
-
+- 
 
 # 4. Feedback
 Cada versão do gráfico produzida foi submetida à avaliação de pessoas de relacionadas à área de TI e relacionadas ao curso de analista de dados da Udacity por meio da plataforma slack. Abaixo apresentamos a relação dos feedbacks recebidos:
@@ -28,6 +29,8 @@ Cada versão do gráfico produzida foi submetida à avaliação de pessoas de re
 
 - Versão 1, Feedback 4: "Bem interessante, mas tem duas coisas que, no meu ponto de vista, poderiam melhorar. A coluna de barras horizontais não deveria ser crescente de baixo para cima, ao invés de decrescente? De 0.1 a 0.6 não entendi exatamente o que são cada coluna, talvez uma legenda adicional informando o que é cada coluna possa ajudar no sentido de bater o olho e já entender do que se trata."
 
+- Versão 1, Feedback 5: "Apresenta fácil visualização e interpretação de dados. A funcionalidade dos valores com o cursor é uma vantagem positiva, pois evita a poluição de dados, levando o analista a considerar cada um de maneira individual para uma tomada de decisão. A questão das cores escolhidas para o gráfico tem alguma justificativa? Talvez uma legenda com o significado das cores
+considerando que 80% das pessoas são visuais. Eu sou cinestésica, mas como contribuição uma legenda com as cores."
 
 # 5. Recursos utilizados:
 Neste projeto foram utilizadas as seguintes fontes de informação:
