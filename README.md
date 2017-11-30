@@ -15,6 +15,8 @@ Nosso objetivo neste projeto é, portanto, procurar reunir o máximo das informa
 
 # 3. Design
 
+
+
 # 4. Feedback
 Cada versão do gráfico produzida foi submetida à avaliação de pessoas de relacionadas à área de TI e relacionadas ao curso de analista de dados da Udacity por meio da plataforma slack. Abaixo apresentamos a relação dos feedbacks recebidos:
 
@@ -27,5 +29,50 @@ Cada versão do gráfico produzida foi submetida à avaliação de pessoas de re
 - Versão 1, Feedback 4: "Bem interessante, mas tem duas coisas que, no meu ponto de vista, poderiam melhorar. A coluna de barras horizontais não deveria ser crescente de baixo para cima, ao invés de decrescente? De 0.1 a 0.6 não entendi exatamente o que são cada coluna, talvez uma legenda adicional informando o que é cada coluna possa ajudar no sentido de bater o olho e já entender do que se trata."
 
 
-# 5. Recursos
+# 5. Recursos utilizados:
+Neste projeto foram utilizadas as seguintes fontes de informação:
 
+http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf
+http://www.thefunctionalart.com/p/about-book.html
+https://classroom.udacity.com/nanodegrees/nd002/parts/00213454010/modules/318423863275460/lessons/3063188874/concepts/31859788930923
+https://classroom.udacity.com/nanodegrees/nd002/parts/00213454010/modules/318423863275460/lessons/3063188874/concepts/33073888680923
+http://vita.had.co.nz/papers/tidy-data.pdf
+http://www.instantr.com/2012/12/11/exporting-a-dataset-from-r/
+https://hackernoon.com/visualizing-data-in-javascript-with-d3-js-and-dimple-7395681c4b74
+https://www.endpoint.com/blog/2015/10/15/intro-to-dimplejs-graphing-in-6-easy
+https://www.mkyong.com/html/html-tutorial-hello-world/
+https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript
+http://tableless.github.io/iniciantes/manual/js/inserindo-js.html
+https://www.w3.org/wiki/How_does_the_Internet_work
+http://tableless.github.io/iniciantes/
+https://www.w3.org/community/webed/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+http://cavas.com.br/programacao/aplicativo-web-em-3-camadas/
+https://pt.slideshare.net/FabioMouraPereira/desenvolvimento-de-sistemas-web-conceitos-bsicos
+https://pt.stackoverflow.com/questions/8843/por-que-usar-javascript-se-existem-tantas-outras-tecnologias-para-gera-conte%C3%BAdo
+http://www.c-sharpcorner.com/UploadFile/2072a9/client-side-vs-server-side-programming-languages/
+https://github.com/PMSI-AlignAlytics/dimple/wiki
+https://udacity-br.slack.com/messages/C2C147PFE/convo/C2C147PFE-1510778957.000323/
+https://www.datasciencecentral.com/profiles/blogs/implemetation-of-17-classification-algorithms-in-r?utm_content=buffer20677&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+http://dimplejs.org/advanced_examples_viewer.html?id=advanced_time_axis
+https://datavizcatalogue.com/index.html
+http://bl.ocks.org/enjalot/1525346
+https://www.kaggle.com/kernels
+https://github.com/PMSI-AlignAlytics/dimple/wiki/dimple.chart#noFormats
+https://github.com/PMSI-AlignAlytics/dimple/wiki/dimple.chart#defaultColors
+http://learnjsdata.com/read_data.html
+https://stackoverflow.com/questions/12064202/using-aggregate-to-apply-several-functions-on-several-variables-in-one-call
+http://www.jeromecukier.net/blog/2011/08/11/d3-scales-and-color/
+https://bl.ocks.org/Azgaar/b845ce22ea68090d43a4ecfb914f51bd
+http://dataremixed.com/2012/05/clarity-or-aesthetics-part-2-a-tale-of-four-quadrants/
+http://rawgit.com/
+http://htmlpreview.github.io/
+https://stackoverflow.com/questions/27336550/show-labels-inside-each-bubble-in-dimplejs-bubble-chart
+https://stackoverflow.com/questions/28653331/creating-a-legend-for-a-bubble-chart-using-d3
+https://bart6114.github.io/dimple/
+http://jsfiddle.net/acjwqpsL/2/
+http://jsfiddle.net/kgzo8Lsf/1/
+https://stackoverflow.com/questions/20688253/how-to-modify-the-size-and-color-of-a-pts-on-a-chart-depending-on-the-value-dim
+http://bl.ocks.org/tybyers/736da90eefe0c347a1d6
+http://jsbin.com/kovat/1/edit?html,js,output
+https://rawgit.com/ubirajaratheodoro/datavisualization-ProsperLoans/master/prosper.html
