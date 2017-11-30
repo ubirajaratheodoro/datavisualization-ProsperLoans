@@ -32,13 +32,13 @@ Cada versão do gráfico produzida foi submetida à avaliação de pessoas de re
 # 5. Recursos utilizados:
 Neste projeto foram utilizadas as seguintes fontes de informação:
 
-http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf
-http://www.thefunctionalart.com/p/about-book.html
-https://classroom.udacity.com/nanodegrees/nd002/parts/00213454010/modules/318423863275460/lessons/3063188874/concepts/31859788930923
-https://classroom.udacity.com/nanodegrees/nd002/parts/00213454010/modules/318423863275460/lessons/3063188874/concepts/33073888680923
-http://vita.had.co.nz/papers/tidy-data.pdf
-http://www.instantr.com/2012/12/11/exporting-a-dataset-from-r/
-https://hackernoon.com/visualizing-data-in-javascript-with-d3-js-and-dimple-7395681c4b74
+- http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf
+- http://www.thefunctionalart.com/p/about-book.html
+- https://classroom.udacity.com/nanodegrees/nd002/parts/00213454010/modules/318423863275460/lessons/3063188874/concepts/31859788930923
+- https://classroom.udacity.com/nanodegrees/nd002/parts/00213454010/modules/318423863275460/lessons/3063188874/concepts/33073888680923
+- http://vita.had.co.nz/papers/tidy-data.pdf
+- http://www.instantr.com/2012/12/11/exporting-a-dataset-from-r/
+- https://hackernoon.com/visualizing-data-in-javascript-with-d3-js-and-dimple-7395681c4b74
 https://www.endpoint.com/blog/2015/10/15/intro-to-dimplejs-graphing-in-6-easy
 https://www.mkyong.com/html/html-tutorial-hello-world/
 https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript
