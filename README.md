@@ -26,6 +26,10 @@ Nosso objetivo neste projeto é, portanto, procurar reunir o máximo das informa
 
 - Versão 1, definição de design 5 - Evolução do Público-segmentado: Juntamente com a definição de design 3, verificou-se importante também apresentar o total de volume de empréstimo por segmentação do público. Ou seja, verificou-se que para ponto x do gráfico (DebtToIncomeRatio) representa também um segmento de público que são os mutuários do empréstimos. Por isso, quando o mouse para sobre uma das bolhas, também é atualizado o gráfico de barras lateral, acrescentando o volume total de empréstimos ao longo do tempo para a taxa de comprometimento da renda selecionada (ponto x).
 
+- Versão 2, definição de design 6 - Remoção das cores: Com base nos feedbacks recebidos e também de acordo com as melhores práticas para visualização eficaz de dados, verificou-se que o uso de cores implica também na associação com alguma legenda (o que não existia). Desta forma, adotou-se o padrão monocromático.
+
+- Versão 2, definição de design 7 - Remoção do gráfico lateral de barras: Também com base nos feedbacks, conclui-se que a interação entre o gráfico tooltip da bolha selecionada e o gráfico lateral de barras não é tão intuitivo quanto se imaginava. Por isso, o gráfico lateral de barras foi incorporado ao tooltip, permitindo uma comparação no mesmo gráfico.
+
 # 4. Feedback
 Cada versão do gráfico produzida foi submetida à avaliação de pessoas de relacionadas à área de TI e relacionadas ao curso de analista de dados da Udacity por meio da plataforma slack. Abaixo apresentamos a relação dos feedbacks recebidos:
 
