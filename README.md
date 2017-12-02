@@ -16,6 +16,9 @@ Nosso objetivo neste projeto é, portanto, procurar reunir o máximo das informa
 # 3. Design
 - Diagnóstico inicial e definição do escopo: Conforme consta na documentação do projeto utilizado conforme item anterior, o primeiro gráfico serve para contextualização do cenário; o segundo foca mais diretamente na questão à ser respondida; e o terceiro por sua vez procura analisar os resultados efetivos da operação. Foram levantados todos os atributos utilizados nos 3 gráficos e optou-se na elaboração de um novo gráfico que pudesse sintetizar de maneira eficaz as informações dos gráficos 1 e 2. O terceiro gráfico foi excluído do escopo, pois conclui-se que a aumentaria muito a complexidade do modelo para exibir de maneira eficaz todas as informações dos 3 gráficos.
 
+Link para a versão 1 do gráfico:        https://goo.gl/sHTHWW
+Link para a versão final do gráfico:    https://goo.gl/Zy5pEL
+
 - Versão 1, definição de design 1 - Eixos do gráfico e Posicionamento: Verificou-se que a questão a ser respondida envolvia essencialmente a relação entre o atributo Taxa de Comprometimento da Renda (DebtToIncomeRatio) e o atributo Taxa de Juros Anual (BorrowerAPR). Concluiu-se assim que o posicionamento destes atributos no gráfico seria prioridade onde, então, atribuímos estes aos eixos X e Y respectivamente.
 
 - Versão 1, definição de design 2 - Volume de Emprestimos(LoanAmount): O volume de empréstimos é o atributo que na verdade determinará ou não a forma de relação entre os atributos acima. Por isso, apresentamos o mesmo em forma de bolha, dimensionando seu diâmetro de acordo com o volume em cada posição x,y (DebtToIncomeRatio, BorrowerAPR). O objetivo foi o de procurar dar uma ideia desta relação inicialmente somente visualmente por meio da dimensão das bolhas, sem apresentação de números, desta relação.
