@@ -51,7 +51,7 @@
 				var s_bubble = chart.addSeries("FDebtToIncomeRatio", 
 												dimple.plot.bubble);
 				s_bubble.radius = 40;
-				s_bubble.addOrderRule("FDebtToIncomeRatio")
+				s_bubble.addOrderRule("FDebtToIncomeRatio");
 
 				// adicona o evento mouseover à série de dados para abrir gráfico auxiliar
 				s_bubble.addEventHandler("mouseover", onHover);
@@ -79,7 +79,7 @@
 				   .style("font-family", "courier new")
 				   .style("font-weight", "bold")
 				   .style("font-size", 18)
-				   .text("Prosper Marketplace Inc. - wwww.prosper.com")
+				   .text("Prosper Marketplace Inc. - wwww.prosper.com");
 
 				// adiciona segunda linha de cabeçalho ao gráfico
 				svg.append("text")
@@ -90,7 +90,7 @@
 				   .style("font-family", "courier new")
 				   .style("font-weight", "bold")
 				   .style("font-size", 18)
-				   .text("Volume de Emprestimos por Taxa de Juros e Comprometimento da Renda")
+				   .text("Volume de Emprestimos por Taxa de Juros e Comprometimento da Renda");
 				   
 				// adiciona texto explicativo entre as linhas 1 e 2 do cabeçalho
 				svg.selectAll("explanatory_text")
@@ -162,7 +162,7 @@
 					
 					// restaura o valor total em empréstimos da posição selecionada
 					var value = e.zValue;
-					var loanamount = '$ ' + 
+					var loanamount = "$ " + 
 						value.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 					
 					// exibe o cabeçalho do gráfico auxiliar
@@ -181,14 +181,14 @@
 					  .style("fill", "fill");
 				  
 					// filtra os dados totalizando por FBorrowerAPR e FDebtToIncomeRatio
-					var ViewData1 = data
+					var ViewData1 = data;
 					ViewData1 = dimple.filterData(ViewData1, 
 								"FBorrowerAPR", e.yValue);
 					ViewData1 = dimple.filterData(ViewData1, 
 								"FDebtToIncomeRatio", e.xValue);
 
 					// filtra os dados totalizando apenas por FDebtToIncomeRatio
-					var ViewData2 = data
+					var ViewData2 = data;
 					ViewData2 = dimple.filterData(ViewData2, 
 								"FDebtToIncomeRatio", e.xValue);
 					
@@ -202,9 +202,9 @@
 
 					// configura o Eixo-X do gráfico auxiliar
 					var x_tip1 = tipchart1.addTimeAxis("x", 
-								"FLoanOriginationYear", "%Y", "%Y")//.hidden = true;
+								"FLoanOriginationYear", "%Y", "%Y");
 					var x_tip2 = tipchart2.addTimeAxis("x", 
-								"FLoanOriginationYear", "%Y", "%Y")//.hidden = true;
+								"FLoanOriginationYear", "%Y", "%Y");
 					x_tip1.title = "";
 					x_tip2.title = "";
 					x_tip1.showGridlines = true;
@@ -212,9 +212,9 @@
 					
 					// configura o Eixo-Y do gráfico auxiliar
 					var y_tip1 = tipchart1.addMeasureAxis("y", 
-								"LoanOriginalAmount")//.hidden = true;
+								"LoanOriginalAmount");
 					var y_tip2 = tipchart2.addMeasureAxis("y", 
-								"LoanOriginalAmount")//.hidden = true;
+								"LoanOriginalAmount");
 					y_tip1.title = "";
 					y_tip2.title = "";
 					y_tip1.ticks = 4;
