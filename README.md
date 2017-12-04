@@ -13,6 +13,10 @@ Desta forma, utilizaremos as metodologias aplicáveis para uma visualização ef
 
 Nosso objetivo neste projeto é, portanto, procurar reunir o máximo das informações apresentadas nestes 3 gráficos em um único gráfico dinâmico e interativo.
 
+Uma questão importante para re-analisarmos agora no novo gráfico, é se de alguma forma os empréstimos seriam socialmente distribuídos (uma das premissas da financeira conforme anunciado no seu website www.prosper.com). Dentro deste contexto, será que mutuários com uma alta taxa de comprometimento da renda teriam acesso preferencialmente às menores taxas de juros? Se existe uma relação, qual seria?
+
+O que podemos perceber neste aspecto, é que a taxa de comprometimento da renda dos mutuários não deram à estes qualquer vantagem ou desvantagem na determinação da taxa de juros dos empréstimos intermediados.
+
 # 3. Design
 - Diagnóstico inicial e definição do escopo: Conforme consta na documentação do projeto utilizado conforme item anterior, o primeiro gráfico serve para contextualização do cenário; o segundo foca mais diretamente na questão à ser respondida; e o terceiro por sua vez procura analisar os resultados efetivos da operação. Foram levantados todos os atributos utilizados nos 3 gráficos e optou-se na elaboração de um novo gráfico que pudesse sintetizar de maneira eficaz as informações dos gráficos 1 e 2. O terceiro gráfico foi excluído do escopo, pois conclui-se que a aumentaria muito a complexidade do modelo para exibir de maneira eficaz todas as informações dos 3 gráficos.
 
