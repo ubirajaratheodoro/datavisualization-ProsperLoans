@@ -51,8 +51,9 @@ Cada versão do gráfico produzida foi submetida à avaliação de pessoas de re
 
 - Versão 1, Feedback 4: "Bem interessante, mas tem duas coisas que, no meu ponto de vista, poderiam melhorar. A coluna de barras horizontais não deveria ser crescente de baixo para cima, ao invés de decrescente? De 0.1 a 0.6 não entendi exatamente o que são cada coluna, talvez uma legenda adicional informando o que é cada coluna possa ajudar no sentido de bater o olho e já entender do que se trata."
 
-- Versão 1, Feedback 5: "Apresenta fácil visualização e interpretação de dados. A funcionalidade dos valores com o cursor é uma vantagem positiva, pois evita a poluição de dados, levando o analista a considerar cada um de maneira individual para uma tomada de decisão. A questão das cores escolhidas para o gráfico tem alguma justificativa? Talvez uma legenda com o significado das cores
-considerando que 80% das pessoas são visuais. Eu sou cinestésica, mas como contribuição uma legenda com as cores."
+- Versão 1, Feedback 5: "Apresenta fácil visualização e interpretação de dados. A funcionalidade dos valores com o cursor é uma vantagem positiva, pois evita a poluição de dados, levando o analista a considerar cada um de maneira individual para uma tomada de decisão. A questão das cores escolhidas para o gráfico tem alguma justificativa? Talvez uma legenda com o significado das cores considerando que 80% das pessoas são visuais. Eu sou cinestésica, mas como contribuição uma legenda com as cores."
+
+- Versão 1, Feedback 6: "Acho que a informação ficou clara, bem apresentada. Talvez diminuir um pouco o espaço entre variáveis no eixo x e no y, deixando-o um pouco mais compacto. A informação que fica evidente é que o grande volume de endividamento é entre 10 e 20% da renda (Ah, talvez fosse melhor colocar em percentual o gráfico, não em forma de fração!), e que a maior parte dos empréstimos está na faixa de 10% e 20%. O gráfico do volume de empréstimos está bem claro."
 
 # 5. Recursos utilizados:
 Neste projeto foram utilizadas as seguintes fontes de informação:
